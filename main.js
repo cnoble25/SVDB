@@ -14,11 +14,14 @@ function Search() {
     about.style.display = "none";
     content.innerHTML = "";
     search.style.position = "absolute";
+    search.style.marginBottom = "3vh";
     search.style.bottom = "0";
     search.style.transition = "bottom 2s";
     search.style.left = "50vw";
     search.style.transform = "translate(-50%, 0)";
-    search.style.marginBottom = "3vh";
+    search.style.transition = "bottom 2s";
+    search.style.transitionBehavior = "allow-discrete";
+
 
 
     let SVDB_image = document.createElement('img');
@@ -50,7 +53,7 @@ function Search() {
                       "CLASS: _______</br></br>" +
                       "LOCATION PROXIMITY: ____ ___</br>" +
                       "You are ___ on the correct campus!";
-    text.style.fontSize = "3em";
+    text.style.fontSize = "2.5em";
     text.style.fontFamily = "Arial, sans-serif";
     text.style.fontWeight = "bold";
     item1.class = "item";
@@ -68,7 +71,7 @@ function Search() {
                       "CLASS: _______</br></br>" +
                       "LOCATION PROXIMITY: ____ ___</br>" +
                       "You are ___ on the correct campus!";
-    text2.style.fontSize = "3em";
+    text2.style.fontSize = "2.5em";
     text2.style.fontFamily = "Arial, sans-serif";
     text2.style.fontWeight = "bold";
     item2.appendChild(test_image2);
